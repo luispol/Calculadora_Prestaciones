@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculadora de prestaciones de El Salvador</title>
+    <link rel="icon" href="./img/calculadoraIcono.png">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <!--Sección del encabezado de la página-->
+    <div class="seccion-menu">
+        <a href="#">Inicio</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Servicios</a>
+        <a href="#" class="predeterminado">Calculadora</a>
+        <a href="#">Contáctanos</a>
+    </div>
+
+    <!--Contenedor principal-->
+    <div class="contenedor-principal">
+        <!--Sección del título de la calculadora-->
+        <header class="titulo">
+            <h1>Calcular prestaciones</h1>
+        </header>
+        <div class="contenido-informativo">
+            <h4>El Salvador</h4>
+            <p>Mediante el ingreso de su salario en este formulario, usted puede realizar los cálculos 
+                necesarios para obtener datos como: ISSS patronal, AFP patronal, ISSS laboral, AFP laboral, 
+                Renta Imponible, Impuesto sobre la Renta, Descuento Total y Salario Líquido.</p>
+            <p>
+                <b>Nota:</b>
+                Los cálculos están actualizados a la última reforma realizada por el Instituto Salvadoreño 
+                del Seguro (ISSS), en cuanto al techo máximo de cotización, que es de 1,000 dólares.
+            </p>
+        </div>
+            
+            <!--Tabla1-->
+            <table class="tabla1">
+                <tbody>
+                    <!--Sección de entrada del salario-->
+                    <tr class="seccion1">
+                        <td>Ingresa tu salario:</td>
+                        <td><input type="text" id="salario" name="salario" placeholder="$0.00 - Mensual"></td>
+                        <td><select name="tipo" id="tipo">
+                            <option value="mensual" selected="selected">Mensual</option>
+                            <option value="quincenal">Quincenal</option>
+                            <option value="semanal">Semanal</option>
+                        </select>
+                    </td>
+                    </tr>
+                    <!--Sección de los botones de calculo y borrar-->
+                    <tr class="seccion2">
+                        <td>
+                            <div class="botones">
+                            <input type="button" id="calcular" name="calcular" value="Cacular" >
+                            <br>
+                            <input type="button" name="borrar" id="borrar" value="Borrar" class="input2">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--Tabla 2-->
+            <!--Tabla de muestra de resultados-->
+            <table class="tabla2">
+                <!--Encabezado de tabla 2-->
+                <thead>
+                    <tr class="tabla2-titulo">
+                        <th>Resultados de Calculos</th>
+                    </tr>
+                </thead>
+                <!--Cuerpo de la tabla 2-->
+                <tbody>
+                    <tr>
+                        <td>Cálculo de Salario:</td>
+                        <td><input type="text" id="tipoCalculo" name="tipoCalculo" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>AFP Patronal:</td>
+                        <td><input type="text" id="afpPatronal"  name="afpPatronal" readonly placeholder="$0.00"></td>
+                    </tr>
+                    <tr>
+                        <td>ISSS Patronal:</td>
+                        <td><input type="text" id="isssPatronal"  name="isssPatronal" readonly placeholder="$0.00"></td>
+                    </tr>
+                    <tr>
+                        <td>ISSS Laboral:</td>
+                        <td><input type="text" id="isss"  name="isss" readonly placeholder="$0.00"></td>
+                    </tr>
+                    <tr>
+                        <td>AFP Laboral:</td>
+                        <td><input type="text" id="afp"  name="afp" readonly placeholder="$0.00"></td>
+                    </tr>
+                    <tr>
+                        <td>Salario(-)AFP:</td>
+                        <td><input type="text" id="salario-afp"  name="salario-afp" readonly placeholder="$0.00"></td>
+                    </tr>
+                    <tr>
+                        <td>Descuento total:</td>
+                        <td><input type="text" id="descuentoT"  name="descuentoT" readonly placeholder="$0.00"></td>
+                    </tr>
+                    <tr>
+                        <td>Impuesto sobre la Renta:</td>
+                        <td><input type="text" id="renta"  name="renta" readonly placeholder="$0.00"></td>
+                    </tr>
+                    <tr>
+                        <td> <p class="salario-liquido">Salario Liquido:</p></td>
+                        <td class="resultColumn"><input type="text" id="salarioNeto"  name="salarioNeto" readonly placeholder="$0.00"></td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    <!--Sección de footer-->
+    <div class="footer">
+        <p>Programación en Web I<br>
+        © Todos los derechos reservados<br>
+        Luis Mario Polanco Bolaños</p>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

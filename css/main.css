@@ -1,0 +1,269 @@
+/*Selector universal*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Bloque para darle estilos a todo el cuerpo de la página web*/
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+/*Bloque de estilo para especificamente la barra de navegacion*/
+.seccion-menu{
+    background-color: black;
+    overflow: hidden;
+}
+
+/*Bloque de estilo para las etiquetas a que estarán en la barra de navegacion*/
+.seccion-menu a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*Bloque para dar efecto de otro color a las opciones del menu mientras el mouse pasa sobre ellas*/
+.seccion-menu a:hover{
+    background-color: #4390f0;
+}
+
+/*Bloque de estilos para darle color a la opción por defecto ¨Generador¨, para que este seleccionada*/
+.seccion-menu .predeterminado{
+    background-color: #4390f0;
+}
+
+/*Bloque de estilo para poder darle estilo correspondiente al pie de pagina*/
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/*Está clase es para las etiquetas p que están dentro de la clase footer, las cuales generará un espacio entre su contenedor padre,
+que en esté caso es una etiqueta div.*/
+.footer p{
+    padding: 14px 16px;
+}
+
+/*Bloque de estilo para contenedor principal*/
+.contenedor-principal{
+    color: black;
+    display: block;
+    font-size: 18px;
+    margin-left: 200px;
+    margin-right: 400px;
+    margin-top: 30px;
+}
+
+/*Bloque de estilo para las etiquetas div dentro del contenedor-principal*/
+.contenedor-principal div{
+    display: block;
+}
+
+/*Bloque de estilo para el titulo del contenedor principal*/
+.titulo{
+    text-align: left;
+}
+
+/*Bloque de estilo para los encabezados del contenedor informativo*/
+.contenido-informativo h4{
+    box-sizing: border-box;
+    color: black;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+/*Bloque de estilo para los párrafos dentro del contenedor informativo*/
+.contenido-informativo p{
+    box-sizing: border-box;
+    color: rgb(89, 95, 95);
+    margin-bottom: 20px;
+}
+
+/*Bloque de estilos para la tabla 1*/
+.tabla1{
+    border-bottom-color: rgb(128, 128, 128);
+    border-collapse: collapse;
+    border-left-color: rgb(128,128,128);
+    border-right-color: rgb(128,128,128);
+    border-top-color: rgb(128,128,128);
+    box-sizing: border-box;
+    color: rgb(89, 95, 95);
+    height: 140px;
+}
+
+/*Bloque de estilos para el cuerpo de la tabla 1*/
+.tabla1 tbody{
+    border-bottom-color: rgb(128, 128, 128);
+    border-collapse: collapse;
+    border-left-color: rgb(128,128,128);
+    border-right-color: rgb(128,128,128);
+    border-top-color: rgb(128,128,128);
+    box-sizing: border-box;
+    color: rgb(89, 95, 95);
+    line-height: 30.6px;
+}
+
+/*Bloque de estilo para la seccio 1 de la tabla 1, donde ingresará el usuario los datos y seleccionara una opción del select*/
+.tabla1 .seccion1{
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom-color: rgb(128, 128, 128);
+    border-collapse: collapse;
+    border-left-color: rgb(128,128,128);
+    border-right-color: rgb(128,128,128);
+    border-top-color: rgb(128,128,128);
+    display: inline-block;
+    line-height: 30.6px;
+}
+
+/*Bloque de estilo para el contenido de la tabla 1*/
+.tabla1 td{
+    color: rgb(89, 95, 95);
+    line-height: 30.6px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+/*Bloque de estilo para los input de la tabla 1, siempre en la sección 2*/
+.tabla1 input{
+    height: 50px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+/*Bloque de estilo para el selector multiple de la sección 1*/
+.tabla1 select{
+    font-size: 18px;
+    width: 120px;
+}
+
+/*Bloque de estilos para la sección 2 de la tabla 1*/
+.tabla1 .seccion2{
+    color: rgb(89, 95, 95);
+    display: flex;
+    line-height: 30.6px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+/*Bloque de estilo para los botonoes que se encuentran en la sección 2 de la tabla 1*/
+.tabla1 .seccion2 .botones{
+    display: flex;
+}
+
+/*Bloque de estilos para darle apariencia de botones a las opciones de la calculadora*/
+.tabla1 .seccion2 .botones input{
+    background-color: rgb(118, 195, 252);
+    border-color: rgb(118, 195, 252);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*Bloque de estilo para garantizar el espacio al input2 (BORRAR)*/
+.tabla1 .seccion2 .botones .input2{
+    margin-left: 10px;
+}
+
+/*Bloque de estilos generales para la tabla 2*/
+.tabla2{
+    border-bottom-color: rgb(128, 128, 128);
+    border-collapse: collapse;
+    border-left-color: rgb(128,128,128);
+    border-right-color: rgb(128,128,128);
+    border-top-color: rgb(128,128,128);
+    color: rgb(89, 95, 95);
+    display: table;
+    line-height: 30.6px;
+    text-align: left;
+    width: 100%;
+}
+
+/*Bloque de estilo para el encabezado de la tabla 2*/
+.tabla2 thead {
+    border-bottom-color: rgb(128, 128, 128);
+    border-collapse: collapse;
+    border-left-color: rgb(128, 128, 128);
+    border-right-color: rgb(128, 128, 128);
+    border-top-color: rgb(128, 128, 128);
+    color: black;
+    line-height: 30.6px;
+    text-align: left;
+
+}
+
+/*Bloque de estilo para el color de fondo para el titulo de la tabla de resultados*/
+.tabla2 .tabla2-titulo{
+    background-color: #fff !important;
+}
+
+/*Bloque de estilo para las etiquetas tr de la tabla 2 dentro de su cuerpo*/
+.tabla2 tbody tr{
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom-color: rgb(128, 128, 128);
+    border-left-color: rgb(128, 128, 128);
+    border-right-color: rgb(128, 128, 128);
+    border-top-color: rgb(128, 128, 128);
+    color: rgb(89, 95, 95);
+    line-height: 30.6px;
+}
+
+/*Bloque de estilo para darle color de fondo a las filas pares de la tabla 2*/
+.tabla2 tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/*Bloque de estilo para darle color de fondo a las filas impares de la tabla 2*/
+.tabla2 tr:nth-child(odd) {
+    background-color: #e6e6e6;
+}
+
+/*Bloque de estilo para las etiquetas td (para el contenido) dentro de cuerpo de la tabla 2*/
+.tabla2 tbody td{
+    color: rgb(89, 95, 95);
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+/*Bloque de estilo para los input dentro del cuerpo de la tabla 2*/
+.tabla2 tbody input{
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: black;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+
+
